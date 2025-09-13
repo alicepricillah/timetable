@@ -1,100 +1,45 @@
 
-:root{
-  --border:#222;
-  --header-bg:#2c3e50;
-  --header-color:#fff;
-  --break-bg:#f4d03f;
-  --lunch-bg:#85c1e9;
-  --form-bg:#a569bd;
-  --cell-bg:#ffffff;
-  --font: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse; 
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
 }
 
-*{box-sizing:border-box}
-body{
-  font-family:var(--font);
-  margin:0;
-  background:#f6f6f6;
-  color:#222;
-  padding:2rem 1rem;
-  display:flex;
-  justify-content:center;
+th, td {
+  text-align: center;
+  vertical-align: middle;
 }
-main{
-  width:100%;
-  max-width:1100px; /* fixed layout width target */
+th {
+  font-size:1.1rem;
+  font-weight: bold;
 }
 
-/* Heading */
-h1{
-  text-align:center;
-  font-size:1.05rem;
-  margin-bottom:0.75rem;
-  letter: spacing 2px;
+td {
+  font-size: 1rem;  
+  font-weight: normal;
+}
+th, td {
+  padding: 10px;
+}
+.break {
+  background-color: #fff3b0;
+  font-weight: bold;
 }
 
-/* Table */
-.timetable{
-  width:100%;
-  border-collapse:collapse;
-  table-layout:fixed; /* keep sizes consistent */
-  background:var(--cell-bg);
-  box-shadow:0 2px 6px rgba(0,0,0,0.06);
-  font-size:0.85rem;
+.lunch {
+  background-color: #ffddc181;
+  font-weight: bold;
 }
 
-/* headers */
-.timetable thead th{
-  border:1px solid var(--border);
-  padding:8px 6px;
-  background:var(--header-bg);
-  color:var(--header-color);
-  text-align:center;
-  font-weight:700;
-  font-size:0.9rem;
+.activity {
+  background-color: #cce5ff;
+  font-style: italic;
 }
 
-/* day/time column */
-.col-daytime{
-  width:10%;
-  writing-mode:horizontal-tb;
-}
 
-/* cells */
-.timetable td, .timetable th[scope="row"]{
-  border:1px solid var(--border);
-  padding:8px 6px;
-  text-align:center;
-  vertical-align:middle;
-  background:var(--cell-bg);
-}
-
-/* row headers (day / year) */
-.timetable th[scope="row"]{
-  background:#ecf0f1;
-  font-weight:700;
-  width:10%;
-}
-
-/* highlights */
-.break{
-  background:var(--break-bg);
-  font-weight:700px;
-}
-
-.lunch{
-  background:var(--lunch-bg);
- font-weight:700;
-}
-
-.form-time{
-  background:var(--form-bg);
-  font-weight:700;
-  writing-mode:vertical-rl;
-  transform:rotate(180deg);
-}
-
-/* small screen fallback - though spec says fixed layout, keep readable */
 @media (max-width:900px){
   main{padding:0 0.5rem;}
   .timetable{font-size:0.7rem}
@@ -105,7 +50,7 @@ h1{
   color:#444;
 }
 
-/* Accessibility helpers: visually hidden class for captions/extra text */
+
 .sr-only{
   position:absolute !important;
   height:1px;width:1px;overflow:hidden;
@@ -117,7 +62,7 @@ table , th,td{
 
 }
 th,td{
-    padding:10px;
+    padding: 10px;
     text-align:center;
 }
 
