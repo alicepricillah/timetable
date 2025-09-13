@@ -1,5 +1,7 @@
 # Alice  Osieko - Timetable [2024/2025]
 
+![Timetable Preview](timetable-preview.png "Preview of Timetable Project")
+
 ## Overview
 This project recreates the 2024/2025 academic year timetable using **HTML** and **CSS**.  
 It demonstrates knowledge of HTML tables, CSS styling, and accessibility best practices.
