@@ -3,6 +3,13 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse; 
 }
+.form{text-align:start;
+   text-orientation:upright;
+   font-size: 1.1rem;
+   word-spacing:130px ;
+   writing-mode:vertical-rl ;
+
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 20px;
